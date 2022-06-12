@@ -1,0 +1,63 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: absolute;
+    bottom: auto;
+    color: #f1f1f1;
+    width: auto;
+    padding-top: 15%;
+    padding-left: 40%;
+  }
+
+  h1 {
+    display: flex;
+    font-size: 2.4rem;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 25%;
+    color: white;
+    animation: pulsate 0.11s ease-in-out infinite alternate;    
+  }
+  
+  a {
+    display: inline;
+    font-size: 4rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    animation: pulsate 0.11s ease-in-out infinite alternate;    
+  }
+  @keyframes pulsate {
+    100% {
+      /* Larger blur radius */
+      text-shadow:
+        0 0 2px #fff,
+        0 0 8px #fff,
+        0 0 15px #fff,
+        0 0 30px #5271ff,
+        0 0 70px #5271ff,
+        0 0 80px #5271ff,
+        0 0 75px #5271ff,
+        0 0 125px #5271ff;
+    }
+   0% {
+      /* A slightly smaller blur radius */
+      text-shadow:
+        0 0 2px #fff,
+        0 0 8px #fff,
+        0 0 15px #fff,
+        0 0 30px #5271ff,
+        0 0 70px #5271ff,
+        0 0 80px #5271ff,
+        0 0 75px #5271ff,
+        0 0 140px #5271ff;
+    }
+  }
